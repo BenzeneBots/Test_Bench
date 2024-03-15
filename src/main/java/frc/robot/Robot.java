@@ -38,8 +38,6 @@ public class Robot extends TimedRobot {
   private final JoystickButton b = new JoystickButton(j, 1);
   private final JoystickButton c = new JoystickButton(j, 2);
   private final JoystickButton d = new JoystickButton(j, 3);
-//  private final TalonFX leader = new TalonFX(46);
-//  private final TalonFX follower = new TalonFX(47);
 
   private final TalonFX shoot4 = new TalonFX(57);
   private final TalonFX shoot1 = new TalonFX(56);
@@ -57,10 +55,6 @@ public class Robot extends TimedRobot {
   }
   @Override
   public void robotPeriodic() {
-    SmartDashboard.putBoolean("d1", d1.get());
-    SmartDashboard.putBoolean("d2", d2.get());
-    SmartDashboard.putBoolean("d3", d3.get());
-    SmartDashboard.putBoolean("d4", d4.get());
     if(b.getAsBoolean()) {
       intakeTurnerLead.set(0.5);
     } else if(c.getAsBoolean()) {
@@ -71,16 +65,6 @@ public class Robot extends TimedRobot {
     }
   }
 
-  /**
-   * This autonomous (along with the chooser code above) shows how to select between different
-   * autonomous modes using the dashboard. The sendable chooser code works with the Java
-   * SmartDashboard. If you prefer the LabVIEW Dashboard, remove all of the chooser code and
-   * uncomment the getString line to get the auto name from the text box below the Gyro
-   *
-   * <p>You can add additional auto modes by adding additional comparisons to the switch structure
-   * below with additional strings. If using the SendableChooser make sure to add them to the
-   * chooser code above as well.
-   */
   @Override
   public void autonomousInit() {
   }

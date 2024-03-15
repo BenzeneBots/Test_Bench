@@ -1,0 +1,5 @@
+Joystick Port: 0
+Buttons: 1,2
+Intake Turner (Check for SparkMAX Power if not working)
+
+If testing IntakePickup as well, wire in the Kraken and use the intakeTurner motor to run it
